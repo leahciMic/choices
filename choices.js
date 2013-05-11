@@ -25,10 +25,14 @@
  * Pick an option>> 2
  * You picked Second option
  *
+ * @todo Add support for more than 9 options (key number + enter)
+ *
  */
 
 module.exports = function(prompt, choices, callback) {
   var stdin = process.stdin;
+  if (choices.length > 9)
+    throw new Error('choices only supports < 9 choices');
   choices.forEach(function(name, idx) {
     console.log('  ' + (idx + 1) + ': ' + name);
   });

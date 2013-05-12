@@ -1,0 +1,20 @@
+{
+  "name": "choices",
+  "version": "0.0.0",
+  "description": "choices - a helper function for prompting the user with multiple choices",
+  "main": "choices.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leahcimic/choices"
+  },
+  "keywords": [
+    "choice",
+    "prompt",
+    "question"
+  ],
+  "author": "Michael Leaney <leahcimic@gmail.com>",
+  "license": "BSD"
+}

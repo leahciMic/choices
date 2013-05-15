@@ -1,6 +1,6 @@
 {
   "name": "choices",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "choices - a helper function for prompting the user with multiple choices",
   "main": "choices.js",
   "scripts": {

@@ -50,7 +50,7 @@ module.exports = function(prompt, choices, callback) {
       if (key === '\u0003')
         process.exit();
 
-      console.log(key);
+      process.stdout.write(key + "\n");
 
       idx = +key;
 

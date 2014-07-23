@@ -28,17 +28,24 @@
  * @todo Add support for more than 9 options (key number + enter)
  *
  */
-
-module.exports = function(prompt, choices, callback) {
+var Choices = module.exports = function choices(prompt, choices, callback) {
   var stdin = process.stdin;
-  if (choices.length > 9)
+  var colors = require('colors');
+
+  if (choices.length > 9) {
     throw new Error('choices only supports < 9 choices');
+  }
+
   choices.forEach(function(name, idx) {
-    console.log('  ' + (idx + 1) + ': ' + name);
+    console.log('  ['.bold + ('' + (idx + 1)).green.bold + ']'.bold + ': ' + name);
   });
-  process.stdout.write(prompt + '>> ');
+
+  process.stdout.write(prompt + '>> '.red);
+
   stdin.setRawMode(true);
   stdin.resume();
+
+  var self = this;
 
   stdin.once(
     'data',
@@ -47,18 +54,15 @@ module.exports = function(prompt, choices, callback) {
       stdin.pause();
       stdin.setRawMode(false);
 
-      if (key === '\u0003')
-        process.exit();
-
       process.stdout.write(key + "\n");
 
       idx = +key;
 
       if (idx > 0 && idx <= choices.length)
         return callback(idx - 1);
-
+      
       process.nextTick(function() {
-        choices(prompt, choices, callback);
+        self(prompt, choices, callback);
       });
     }
   );

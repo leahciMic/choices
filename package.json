@@ -1,6 +1,6 @@
 {
   "name": "choices",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "choices - a helper function for prompting the user with multiple choices",
   "main": "choices.js",
   "scripts": {
@@ -16,5 +16,8 @@
     "question"
   ],
   "author": "Michael Leaney <leahcimic@gmail.com>",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "colors": "^0.6.2"
+  }
 }

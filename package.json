@@ -1,7 +1,7 @@
 {
   "name": "choices",
-  "version": "0.0.3",
-  "description": "choices - a helper function for prompting the user with multiple choices",
+  "version": "0.0.4",
+  "description": "Choices - an API for prompting the user with multiple choices",
   "main": "choices.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,8 @@
   "keywords": [
     "choice",
     "prompt",
-    "question"
+    "question",
+    "input"
   ],
   "author": "Michael Leaney <leahcimic@gmail.com>",
   "license": "BSD",

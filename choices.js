@@ -19,15 +19,16 @@
  *   console.log('You picked ' + options[idx]);
  * });
  *
- *   1: First option
- *   2: Second option
- *   3: Third option
+ *   [1]: First option
+ *   [2]: Second option
+ *   [3]: Third option
  * Pick an option>> 2
  * You picked Second option
  *
  * @todo Add support for more than 9 options (key number + enter)
  *
  */
+
 var Choices = module.exports = function choices(prompt, choices, callback) {
   var stdin = process.stdin;
   var colors = require('colors');

@@ -16,9 +16,37 @@
     "question",
     "input"
   ],
-  "author": "Michael Leaney <leahcimic@gmail.com>",
+  "author": {
+    "name": "Michael Leaney",
+    "email": "leahcimic@gmail.com"
+  },
   "license": "BSD",
   "dependencies": {
     "colors": "^0.6.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/leahcimic/choices/issues"
+  },
+  "homepage": "https://github.com/leahcimic/choices",
+  "_id": "choices@0.0.4",
+  "dist": {
+    "shasum": "903a45c8dd82c950fbdf445bcb69de08237bff60",
+    "tarball": "http://registry.npmjs.org/choices/-/choices-0.0.4.tgz"
+  },
+  "_from": "choices@*",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "leahcimic",
+    "email": "leahcimic@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "leahcimic",
+      "email": "leahcimic@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "903a45c8dd82c950fbdf445bcb69de08237bff60",
+  "_resolved": "https://registry.npmjs.org/choices/-/choices-0.0.4.tgz",
+  "readme": "ERROR: No README data found!"
 }

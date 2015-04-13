@@ -59,7 +59,7 @@ var Choices = module.exports = function Choices(prompt, options, callback) {
 
 
       if (charCode == 3 || charCode == 27 || charCode == 113 || charCode == 81) {
-        callback(null);
+        return callback(null);
       }
 
       idx = +key;
